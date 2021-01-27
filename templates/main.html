@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+
+    </head>
+    <body>
+        <h1>test</h1>
+        <div class="chart" id="map">
+        <div class="chart" id="map2">
+            <script>
+                var graphs = {{plot | safe}};
+                Plotly.plot('map',graphs,{})
+            </script>
+            <script>
+                var graphs = {{plot2 | safe}};
+                Plotly.plot('map2',graphs,{})
+            </script>
+        </div>
+        
+    </body>
+</html>
